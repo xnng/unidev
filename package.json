@@ -1,0 +1,26 @@
+{
+  "name": "@xnng/unidev",
+  "version": "1.0.2",
+  "description": "一个用于快速启动微信小程序开发的命令行工具",
+  "main": "bin/index.js",
+  "bin": {
+    "unidev": "bin/index.js"
+  },
+  "scripts": {
+    "postpublish": "sync-to-mirror"
+  },
+  "devDependencies": {
+    "@easyv/sync-to-mirror": "^0.0.2"
+  },
+  "keywords": [
+    "uniapp",
+    "cli",
+    "weixin",
+    "miniprogram"
+  ],
+  "author": "xnng",
+  "license": "MIT",
+  "repository": {
+    "type": "git"
+  }
+}
