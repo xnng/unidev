@@ -28,5 +28,6 @@ unidev npm run build:mp-weixin
 ## 要求
 
 - macOS 系统
+- 暂不支持 Windows 系统
 - 已安装微信开发者工具
 - Node.js >= 14
