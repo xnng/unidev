@@ -1,6 +1,12 @@
 #!/usr/bin/env node
 
 const { spawn } = require('child_process');
+const { version } = require('../package.json');
+
+if (process.argv.includes('-v') || process.argv.includes('--version')) {
+  console.log(`unidev v${version}`);
+  process.exit(0);
+}
 const path = require('path');
 
 const args = process.argv.slice(2);
