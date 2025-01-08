@@ -1,6 +1,6 @@
 {
   "name": "@xnng/unidev",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "使用 uniapp命令行启动微信小程序时，能自动打开微信开发者工具",
   "main": "bin/index.js",
   "bin": {
