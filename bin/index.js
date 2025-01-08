@@ -8,11 +8,13 @@ const isBuild = args.includes('build');
 const distPath = isBuild ? 'dist/build/mp-weixin' : 'dist/dev/mp-weixin';
 const macosWeixinPath = '/Applications/wechatwebdevtools.app/Contents/MacOS/cli';
 
-const pnpmDev = spawn('pnpm', ['dev'], {
+const packageManager = args[0] || 'pnpm';
+const command = args[1] || 'dev';
+const devProcess = spawn(packageManager, [command], {
   stdio: ['inherit', 'pipe', 'inherit']
 });
 
-pnpmDev.stdout.on('data', (data) => {
+devProcess.stdout.on('data', (data) => {
   const output = data.toString();
   console.log(output);
 
@@ -24,7 +26,7 @@ pnpmDev.stdout.on('data', (data) => {
   }
 });
 
-pnpmDev.on('error', (error) => {
+devProcess.on('error', (error) => {
   console.error(`执行出错: ${error}`);
   process.exit(1);
 });

@@ -1,6 +1,6 @@
 {
   "name": "@xnng/unidev",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "一个用于快速启动微信小程序开发的命令行工具",
   "main": "bin/index.js",
   "bin": {
@@ -21,6 +21,7 @@
   "author": "xnng",
   "license": "MIT",
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/xnng/unidev.git"
   }
 }

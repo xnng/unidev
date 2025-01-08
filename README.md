@@ -6,8 +6,6 @@
 
 ```bash
 npm install -g @xnng/unidev
-# 或者
-pnpm add -g @xnng/unidev
 ```
 
 ## 使用
