@@ -1,7 +1,7 @@
 {
   "name": "@xnng/unidev",
-  "version": "1.1.6",
-  "description": "使用 uniapp命令行启动微信小程序时，能自动打开微信开发者工具",
+  "version": "2.0.2",
+  "description": "一条命令搞定 UniApp 小程序开发，自动打开微信/支付宝开发者工具",
   "main": "bin/index.js",
   "bin": {
     "unidev": "bin/index.js"
@@ -10,8 +10,7 @@
     "postpublish": "sync-to-mirror"
   },
   "dependencies": {
-    "fs-extra": "^11.2.0",
-    "readline-sync": "^1.4.10"
+    "fs-extra": "^11.2.0"
   },
   "devDependencies": {
     "@easyv/sync-to-mirror": "^0.0.2"
@@ -20,7 +19,14 @@
     "uniapp",
     "cli",
     "weixin",
-    "miniprogram"
+    "wechat",
+    "alipay",
+    "miniprogram",
+    "小程序",
+    "微信小程序",
+    "支付宝小程序",
+    "devtools",
+    "automation"
   ],
   "author": "xnng",
   "license": "MIT",
